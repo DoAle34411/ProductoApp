@@ -1,16 +1,17 @@
 ﻿using ProductoApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ProductoApp.Utils
 {
-    class Utils
+    internal class Utils
     {
 
-        static public List<Producto> ListaProductos = new List<Producto>()
+        static public ObservableCollection<Producto> ListaProductos = new ObservableCollection<Producto>()
         {
             new Producto{
                 IdProducto=1,

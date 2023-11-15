@@ -24,7 +24,8 @@
                     <EntryCell x:Name="Nombre"
                                Placeholder="Nombre"/>
                     <EntryCell x:Name="Cantidad"
-                               Placeholder="Cantidad"/>
+                               Placeholder="Cantidad"
+                               />
                     <EntryCell x:Name="Descripcion"
                                Placeholder="Descripcion"/>
                 </TableSection>

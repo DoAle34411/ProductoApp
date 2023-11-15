@@ -5,7 +5,7 @@ using CommunityToolkit.Maui.Core;
 using CommunityToolkit.Maui.Alerts;
 using ProductoApp.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-using Java.Lang;
+using System.Collections.ObjectModel;
 
 namespace ProductoApp;
 
@@ -28,9 +28,11 @@ public partial class NuevoProductoPage : ContentPage
                 cantidad = Int32.Parse(Cantidad.Text),
             }
             );
+
             await Navigation.PopAsync();
+            Console.WriteLine(Utils.Utils.ListaProductos.Count);
         }
-        catch (NullPointerException ex)
+        catch (Exception ex)
         {
             var toast = Toast.Make("Agregue un producto primero o regrese", ToastDuration.Short, 14);
 

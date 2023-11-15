@@ -25,7 +25,7 @@
             Clicked="OnClickNuevoProducto"
             Margin="10"
             />
-        <ListView x:Name="listaProductos" RowHeight="120">
+        <ListView x:Name="listaProductos" ItemsSource="{Binding Productos}" RowHeight="120">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
