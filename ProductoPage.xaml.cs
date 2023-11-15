@@ -31,4 +31,11 @@ public partial class ProductoPage : ContentPage
         ObservableCollection<Producto> observableCollection = new ObservableCollection<Producto>(Utils.Utils.ListaProductos);
         listaProductos.ItemsSource = observableCollection;
     }
+    private async void OnClickProductoExistente(object sender, EventArgs e)
+    {
+        var toast = Toast.Make("On Click Boton Nuevo Producto", ToastDuration.Short, 14);
+
+        await toast.Show();
+        await Navigation.PushAsync(new ProductoPage());
+    }
 }

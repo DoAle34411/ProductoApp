@@ -28,7 +28,7 @@
         <ListView x:Name="listaProductos" ItemsSource="{Binding Productos}" RowHeight="120">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
+                    <ViewCell Clicked="OnClickProductoExistente">
                         <StackLayout Orientation="Horizontal">
                             <Image
                                 Source="dotnet_bot.png"
